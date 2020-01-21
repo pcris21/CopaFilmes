@@ -1,0 +1,44 @@
+
+
+<main>
+    <div class="container-fluid">
+        <div class="container">
+       
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <div class="row justify-content-center">
+    
+                        <h4>CAMPEONATO DE FILMES</h4>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h1>Fase de Seleção</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                       <h6>Selecione 8 filmes que você deseja que entre na competição e depois clique no botão "Gerar
+                            Campeonato" para prosseguir</h6>
+                    </div>                     
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+
+            <div class="col-8">
+                <p>Selecionados <span>1</span> de 8 filmes </p>
+            </div>
+
+            <div class="col-4">
+                <button class=" btn btn-primary btn-lg">Gerar Campeonato</button>
+            </div>
+        </div>
+        <section>
+            <div id="listaDeFilmes" class="row">
+                <app-filme *ngFor= "let filme of listaFilmes">
+                    <input type="checkbox" (selecionarEvent)="ObterItemSelecionado($event, filme.id)" class=".chk">
+                </app-filme>
+            </div>
+        </section>
+    </div>
+</div>
+</main>
