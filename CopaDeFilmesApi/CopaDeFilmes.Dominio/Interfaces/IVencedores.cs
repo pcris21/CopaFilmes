@@ -4,6 +4,6 @@ namespace CopaDeFilmes.Dominio.Interfaces
 {
     public interface IVencedores
     {
-        List<Filme> FilmesVencedores(List<Filme> filmes);
+        List<Filme> DefinirFilmesVencedores(List<Filme> filmes);
     }
 }

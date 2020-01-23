@@ -27,5 +27,12 @@ namespace CopaDeFilmes.Api.Controllers
         {
             return _servico.ObterFilmes();
         }
+
+        [HttpPost]
+        [Route("v1/filmes")]
+        public IEnumerable<Filme> Post(List<Filme> filmes)
+        {
+            return _resultadoFinal.DefinirFilmesVencedores(filmes);
+        }
     }
 }

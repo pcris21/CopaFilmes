@@ -13,7 +13,7 @@ namespace CopaDeFilmes.Dominio
         {
             _comparaFilmes = comparaFilmes;
         }
-        public List<Filme> FilmesVencedores(List<Filme> filmes)
+        public List<Filme> DefinirFilmesVencedores(List<Filme> filmes)
         {
             if (filmes.Count != 4)
                 throw new Exception("Para disputa da segunda fase são necessários 4 filmes");

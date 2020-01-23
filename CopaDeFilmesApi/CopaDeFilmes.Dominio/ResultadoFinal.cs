@@ -17,13 +17,13 @@ namespace CopaDeFilmes.Dominio
             _segundaFase = segundaFase;
             _classificacao = classificacao;
         }
-        public List<Filme> FilmesVencedores(List<Filme> filmes)
+        public List<Filme> DefinirFilmesVencedores(List<Filme> filmes)
         {
             var listaOrdenada = filmes.OrderBy(x => x.Titulo).ToList();
 
-            var resultadoPrimeiraFase = _primeiraFase.FilmesVencedores(listaOrdenada);
+            var resultadoPrimeiraFase = _primeiraFase.DefinirFilmesVencedores(listaOrdenada);
 
-            var resultadoSegundaFase = _segundaFase.FilmesVencedores(resultadoPrimeiraFase);
+            var resultadoSegundaFase = _segundaFase.DefinirFilmesVencedores(resultadoPrimeiraFase);
 
             var resultadoFinal = _classificacao.ObterClassificacaoFinal(resultadoSegundaFase);
 
