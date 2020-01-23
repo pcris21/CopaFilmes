@@ -1,0 +1,16 @@
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Core\bin\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.deps.json
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Core\bin\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.dll
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Core\bin\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.pdb
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Core\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.csprojAssemblyReference.cache
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Core\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.AssemblyInfoInputs.cache
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Core\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.AssemblyInfo.cs
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Core\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.dll
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Core\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.pdb
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Dominio\bin\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.deps.json
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Dominio\bin\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.dll
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Dominio\bin\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.pdb
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Dominio\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.csprojAssemblyReference.cache
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Dominio\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.AssemblyInfoInputs.cache
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Dominio\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.AssemblyInfo.cs
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Dominio\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.dll
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Dominio\obj\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.pdb
