@@ -22,9 +22,11 @@ namespace CopaDeFilmes.Dominio
             var listaOrdenada = filmes.OrderBy(x => x.Titulo).ToList();
 
             var resultadoPrimeiraFase = _primeiraFase.FilmesVencedores(listaOrdenada);
+
             var resultadoSegundaFase = _segundaFase.FilmesVencedores(resultadoPrimeiraFase);
 
             var resultadoFinal = _classificacao.ObterClassificacaoFinal(resultadoSegundaFase);
+
             return resultadoFinal;
         }
 

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CopaDeFilmes.Dominio;
+using CopaDeFilmes.Dominio.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,10 +30,18 @@ namespace CopaDeFilmes.Api
         {
             services.AddControllers();
 
+            //Dependências
+            services.AddScoped<IClassificacao, Classificacao>();
+            services.AddScoped<IComparaFilmes, ComparaFilmes>();
+            services.AddScoped<IPrimeiraFase, PrimeiraFase>();
+            services.AddScoped<ISegundaFase, SegundaFase>();
+            services.AddScoped<IResultadoFinal, ResultadoFinal>();
+            services.AddScoped<IServicoFilmes, ServicoFilmes>();
 
+            //swagger
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "DasaLaboratoriosAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CopaDeFilmes", Version = "v1" });
             });
         }
 

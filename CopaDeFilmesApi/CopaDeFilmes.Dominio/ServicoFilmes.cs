@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CopaDeFilmes.Dominio.Interfaces;
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CopaDeFilmes.Dominio
 {
-    public class ServicoFilmes
+    public class ServicoFilmes : IServicoFilmes
     {
         public async Task<IEnumerable<Filme>> ObterFilmes()
         {
