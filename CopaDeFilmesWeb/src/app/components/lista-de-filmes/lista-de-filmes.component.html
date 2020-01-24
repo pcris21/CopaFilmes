@@ -25,17 +25,21 @@
         <div class="row">
 
             <div class="col-8">
-                <p>Selecionados <span>1</span> de 8 filmes </p>
+            <p>Selecionados <span>{{contador}}</span> de 8 filmes </p>
             </div>
 
             <div class="col-4">
-                <button class=" btn btn-primary btn-lg">Gerar Campeonato</button>
+                <button class=" btn btn-primary btn-lg" (click)="EnviarFilmesSelecionados()">Gerar Campeonato</button>
             </div>
         </div>
         <section>
             <div id="listaDeFilmes" class="row">
-                <app-filme *ngFor= "let filme of listaFilmes">
-                    <input type="checkbox" (selecionarEvent)="ObterItemSelecionado($event, filme.id)" class=".chk">
+                <app-filme *ngFor= "let filme of listaFilmes"
+                [titulo]= "filme.titulo"
+                [ano] = "filme.anoLancamento"
+                (eventoSelecionar)= "ObterItemSelecionado($event, filme)"
+                >  
+                               
                 </app-filme>
             </div>
         </section>

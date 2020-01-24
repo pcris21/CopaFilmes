@@ -10,10 +10,11 @@ import { Filme } from 'src/app/models/filme';
 export class ListaDeFilmesComponent implements OnInit {
   
   listaFilmes: Filme[] = [];
+  resultadoFinal = [];
+
+  contador: 0;
 
   constructor(private servico: FilmeService) {
-
-
    }
 
   ngOnInit(){
@@ -23,8 +24,23 @@ export class ListaDeFilmesComponent implements OnInit {
     })
   }
 
-  ObterItemSelecionado(selecionarEvent, idFilme){
+  ObterItemSelecionado(eventoSelecionar, filme){
+   if(eventoSelecionar.status = 'selected'){
+    this.listaFilmes.push(filme);
+    this.contador ++;
+    console.log(this.contador);
+   }
    
+  }
+
+  EnviarFilmesSelecionados(){
+    console.log("filmes", this.listaFilmes);
+    this.servico.enviar(this.listaFilmes)
+    .subscribe(( resposta => {
+
+    }),
+      (erro) => {});
+    
   }
 
 }

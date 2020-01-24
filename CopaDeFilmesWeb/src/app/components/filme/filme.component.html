@@ -1,15 +1,14 @@
 <div style="padding: 5px">
     <article class="card">
- <div class="row">
-    <div class="col">
-        <ng-content select=".chk"></ng-content>
-    </div>
-    <div class="col">
-        <div class="card-body">
-        <h5 class="card-title">{{titulo}}</h5>
-        <p class="card-text">{{ano}}</p>
+        <div class="col">
+            <span class="align-middle">
+                <input type="checkbox" (change)="selecionarFilme($event)">
+            </span>
+
+            <div class="card-body">
+                <h5 class="card-title">{{titulo}}</h5>
+                <p class="card-text">{{ano}}</p>
+            </div>
         </div>
-    </div>
-</div>
     </article>
 </div>

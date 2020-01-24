@@ -1,6 +1,5 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EventEmitter } from 'events';
-import { stat } from 'fs';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-filme',
@@ -11,10 +10,11 @@ export class FilmeComponent {
 
   @Input() titulo = '';
   @Input() ano = '';
-  @Output('selecionarEvent') itemSelecionadoEvento = new EventEmitter();
+  @Output('eventoSelecionar') itemSelecionadoEvento = new EventEmitter();
 
   selecionarFilme(selected: Event) {
-    //this.itemSelecionadoEvento.emit({status: 'selected'});
+    console.log('item selecionado');
+    this.itemSelecionadoEvento.emit({status: 'selected'})
   }
 
 }
