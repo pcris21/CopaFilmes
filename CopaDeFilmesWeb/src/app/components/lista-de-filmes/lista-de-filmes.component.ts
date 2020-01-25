@@ -55,3 +55,4 @@ export class ListaDeFilmesComponent implements OnInit {
   }
 
 }
+ 

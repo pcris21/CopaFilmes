@@ -5,7 +5,7 @@ import { FilmesVencedores } from './../../models/filmesVencedores';
 @Component({
   selector: 'app-resultado-final',
   templateUrl: './resultado-final.component.html',
-  styleUrls: ['./resultado-final.component.css']
+  styleUrls: []
 })
 export class ResultadoFinalComponent implements OnInit {
   listaFilmes: any;
@@ -25,3 +25,4 @@ export class ResultadoFinalComponent implements OnInit {
   }
 
 }
+ 
