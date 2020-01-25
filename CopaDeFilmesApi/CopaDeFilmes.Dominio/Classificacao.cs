@@ -12,16 +12,18 @@ namespace CopaDeFilmes.Dominio
         public List<Filme> ObterClassificacaoFinal(List<Filme> filmes)
         {
             if (filmes.Count != 2)
-                throw new Exception("Para a classificação final são necessários 2 filmes");
+                throw new ArgumentException("Para a classificação final são necessários 2 filmes");
 
             var filmeA = filmes.ElementAt(0);
             var filmeB = filmes.ElementAt(1);
+            List<Filme> listaOrdenada;
 
             if (filmeA.Nota > filmeB.Nota || filmeB.Nota > filmeA.Nota)
-                return filmes.OrderBy(x => x.Nota).ToList();
-            else            
-                return filmes.OrderBy(x => x.Titulo).ToList();
-            
+                listaOrdenada = filmes.OrderByDescending(x => x.Nota).ToList();
+            else
+                listaOrdenada = filmes.OrderBy(x => x.Titulo).ToList();
+
+            return listaOrdenada;
         }
     }
 }

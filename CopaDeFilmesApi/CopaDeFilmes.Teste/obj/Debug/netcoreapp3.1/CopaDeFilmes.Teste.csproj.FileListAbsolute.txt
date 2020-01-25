@@ -92,3 +92,5 @@ D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeF
 D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Teste\obj\Debug\netcoreapp3.1\CopaDeFilmes.Teste.csproj.CopyComplete
 D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Teste\obj\Debug\netcoreapp3.1\CopaDeFilmes.Teste.dll
 D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Teste\obj\Debug\netcoreapp3.1\CopaDeFilmes.Teste.pdb
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Teste\bin\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.dll
+D:\CONTEUDOS_TI\Testes entrevitas\Solução\CopaDeFilmes\CopaDeFilmesApi\CopaDeFilmes.Teste\bin\Debug\netcoreapp3.1\CopaDeFilmes.Dominio.pdb

@@ -15,7 +15,7 @@ namespace CopaDeFilmes.Dominio
         public List<Filme> DefinirFilmesVencedores(List<Filme> filmes)
         {
             if (filmes.Count != 8)
-                throw new Exception("Para iniciar a disputa são necessários 8 filmes");
+                throw new ArgumentException("Para iniciar a disputa são necessários 8 filmes");
            
 
             var filme1 = filmes.ElementAt(0);
