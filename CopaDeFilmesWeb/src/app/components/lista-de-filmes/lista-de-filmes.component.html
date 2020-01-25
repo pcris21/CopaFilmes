@@ -1,48 +1,50 @@
-
-
 <main>
     <div class="container-fluid">
         <div class="container">
-       
-        <div class="row">
-            <div class="col">
-                <div class="jumbotron">
-                    <div class="row justify-content-center">
-    
-                        <h4>CAMPEONATO DE FILMES</h4>
+
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron">
+                        <div class="row justify-content-center">
+
+                            <h5>CAMPEONATO DE FILMES</h5>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h1>Fase de Seleção</h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h6>Selecione 8 filmes que você deseja que entre na competição e depois clique no botão
+                                "Gerar
+                                Campeonato" para prosseguir</h6>
+                        </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <h1>Fase de Seleção</h1>
-                    </div>
-                    <div class="row justify-content-center">
-                       <h6>Selecione 8 filmes que você deseja que entre na competição e depois clique no botão "Gerar
-                            Campeonato" para prosseguir</h6>
-                    </div>                     
                 </div>
             </div>
-        </div>
-       
-        <div class="row">
 
-            <div class="col-8">
-            <p>Selecionados <span>{{contador}}</span> de 8 filmes </p>
+            <div class="row">
+
+                <div class="col">
+                    <h5>
+                        <strong>
+                            Selecionados <span>{{contador}}</span> de 8 filmes
+                        </strong>
+                    </h5>
+                </div>
+
+                <div class="col text-right">
+                    <button class=" btn btn-primary btn-lg" (click)="EnviarFilmesSelecionados()">Gerar
+                        Campeonato</button>
+                </div>
             </div>
 
-            <div class="col-4">
-                <button class=" btn btn-primary btn-lg" (click)="EnviarFilmesSelecionados()">Gerar Campeonato</button>
-            </div>
+            <section>
+                <div id="listaDeFilmes" class="row col-12">
+                    <app-filme *ngFor="let filme of listaFilmes" [titulo]="filme.titulo" [ano]="filme.ano"
+                        (eventoSelecionar)="ObterItemSelecionado($event, filme)">
+
+                    </app-filme>
+                </div>
+            </section>
         </div>
-        <section>
-            <div id="listaDeFilmes" class="row">
-                <app-filme *ngFor= "let filme of listaFilmes"
-                [titulo]= "filme.titulo"
-                [ano] = "filme.anoLancamento"
-                (eventoSelecionar)= "ObterItemSelecionado($event, filme)"
-                >  
-                               
-                </app-filme>
-            </div>
-        </section>
     </div>
-</div>
 </main>

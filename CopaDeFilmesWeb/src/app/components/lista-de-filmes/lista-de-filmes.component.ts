@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FilmeService } from './../../services/filme.service';
 import { Filme } from 'src/app/models/filme';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-lista-de-filmes',
@@ -10,9 +11,9 @@ import { Filme } from 'src/app/models/filme';
 export class ListaDeFilmesComponent implements OnInit {
   
   listaFilmes: Filme[] = [];
-  resultadoFinal = [];
-
-  contador: 0;
+  resultadoFinal: any = [];
+  listaSelecionados: any = [];
+  contador = 0;
 
   constructor(private servico: FilmeService) {
    }
@@ -26,7 +27,8 @@ export class ListaDeFilmesComponent implements OnInit {
 
   ObterItemSelecionado(eventoSelecionar, filme){
    if(eventoSelecionar.status = 'selected'){
-    this.listaFilmes.push(filme);
+    this.listaSelecionados.push(filme);
+    console.log(this.listaSelecionados);
     this.contador ++;
     console.log(this.contador);
    }
@@ -36,8 +38,10 @@ export class ListaDeFilmesComponent implements OnInit {
   EnviarFilmesSelecionados(){
     console.log("filmes", this.listaFilmes);
     this.servico.enviar(this.listaFilmes)
-    .subscribe(( resposta => {
-
+    .subscribe(( retornoApi => {
+      this.resultadoFinal = retornoApi;
+      //deve redirecionar para o componente resultado final
+      //this.router.navigate(['/home']);
     }),
       (erro) => {});
     

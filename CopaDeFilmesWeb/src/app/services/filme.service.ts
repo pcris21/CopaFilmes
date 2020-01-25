@@ -3,9 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { Filme } from '../models/filme';
 import { Observable } from 'rxjs';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+})
 export class FilmeService{
-    urlApi = '' 
+    urlApi = 'https://localhost:44330/api/CopaDeFilmes/v1/filmes/' 
 
     constructor(private servico: HttpClient){
     }
