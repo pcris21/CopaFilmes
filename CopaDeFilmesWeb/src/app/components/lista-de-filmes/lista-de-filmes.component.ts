@@ -3,6 +3,7 @@ import { FilmeService } from './../../services/filme.service';
 import { Filme } from 'src/app/models/filme';
 import {Router} from '@angular/router';
 
+
 @Component({
   selector: 'app-lista-de-filmes',
   templateUrl: './lista-de-filmes.component.html',
@@ -15,7 +16,7 @@ export class ListaDeFilmesComponent implements OnInit {
   listaSelecionados: any = [];
   contador = 0;
 
-  constructor(private servico: FilmeService) {
+  constructor(private servico: FilmeService, private router: Router) {
    }
 
   ngOnInit(){
@@ -36,15 +37,21 @@ export class ListaDeFilmesComponent implements OnInit {
   }
 
   EnviarFilmesSelecionados(){
-    console.log("filmes", this.listaFilmes);
-    this.servico.enviar(this.listaFilmes)
+    console.log("filmes", this.listaSelecionados);
+    this.servico.enviar(this.listaSelecionados)
     .subscribe(( retornoApi => {
-      this.resultadoFinal = retornoApi;
-      //deve redirecionar para o componente resultado final
-      //this.router.navigate(['/home']);
+      this.resultadoFinal = retornoApi;      
+      this.RedirectToResultadoFinal(this.resultadoFinal);
+     
+      console.log(this.resultadoFinal);
     }),
       (erro) => {});
     
+  }
+
+  RedirectToResultadoFinal(resultado: any){
+    this.router.navigateByUrl('/resultado', {state: resultado});
+
   }
 
 }

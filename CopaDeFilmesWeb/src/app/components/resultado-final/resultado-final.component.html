@@ -19,12 +19,11 @@
 		
         </div>
         	<section>
-        <div class="row col-lg-12">
-            <app-lista-filmes-vencedores *ngFor="let filme of listaFilmes"
+        <div class="container">
+            <app-lista-filmes-vencedores *ngFor="let filme of listaFilmes" 
             [posicao]="posicao"
-            [titulo]="filme.titulo"
+            [titulo]="filme.titulo"           
             >
-
             </app-lista-filmes-vencedores
             >
         </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Filme } from 'src/app/models/filme';
+import {Router} from '@angular/router';
+import { FilmesVencedores } from './../../models/filmesVencedores';
 
 @Component({
   selector: 'app-resultado-final',
@@ -7,14 +8,20 @@ import { Filme } from 'src/app/models/filme';
   styleUrls: ['./resultado-final.component.css']
 })
 export class ResultadoFinalComponent implements OnInit {
-  listaFilmes: Filme[] = [];
-  posicao = '1º'; //Criar método para preencher
+  listaFilmes: any;
+  filmesVencedores: FilmesVencedores[];
+  posicao: '1º';
   
-  constructor() { }
+  constructor(private router: Router) { 
+    const nav = this.router.getCurrentNavigation();
+    this.listaFilmes = nav.extras.state;
+    console.log('resultado final');
+    console.log(this.listaFilmes);
+    }
 
   ngOnInit() {
 
-    //deve receber uma lista com dois itens
+    
   }
 
 }

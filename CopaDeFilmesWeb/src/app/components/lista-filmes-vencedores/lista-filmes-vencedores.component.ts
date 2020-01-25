@@ -11,7 +11,6 @@ export class ListaFilmesVencedoresComponent implements OnInit {
 
   ngOnInit() {
   }
-
   
   @Input() titulo = '';
   @Input() posicao = '';
